@@ -9,7 +9,7 @@ You can install ColorPattern using pip:
 ```pip install colorpattern ```
 
 
-## USAGE
+## Usage
 
 ```python
 from colorpattern import SetPattern, start_color
