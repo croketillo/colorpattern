@@ -2,35 +2,36 @@ import re
 from colorama import Fore, Style, Back
 import builtins
 
-
 class SetPattern:
     def __init__(self, pattern, color=None, back=None, style=None, underline=False):
+        # Compile the regular expression pattern
         self.pattern = re.compile(pattern)
+        # Set default values for color, background, style, and underline
         self.color = color if color is not None else Fore.RESET
         self.back = back if back is not None else Back.RESET
         self.style = style if style is not None else Style.RESET_ALL
         self.underline = underline
 
     def colorize_text(self, text):
+        # Apply color, background, style, and underline to matched text
         if self.underline:
             return self.pattern.sub(lambda match: f"{self.style}{self.color}{self.back}\033[4m{match.group()}\033[0m{Style.RESET_ALL}", text)
         else:
             return self.pattern.sub(lambda match: f"{self.style}{self.color}{self.back}{match.group()}{Style.RESET_ALL}", text)
 
-
-# Función que inicializa el coloreado
+# Function to initialize colorization
 def start_color(patterns):
     def custom_print(*args, **kwargs):
-        # Convertir los argumentos de print a una cadena
+        # Convert print arguments to a string
         text = " ".join(map(str, args))
         
-        # Aplicar el coloreado
+        # Apply colorization to the text
         for pattern in patterns:
             text = pattern.colorize_text(text)
 
-        # Imprimir el texto coloreado
+        # Print the colorized text
         original_print(text, **kwargs)
 
-    # Remplazar la función print por nuestra versión personalizada
+    # Replace the print function with the custom version
     original_print = builtins.print
     builtins.print = custom_print
