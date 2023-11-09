@@ -1,0 +1,6 @@
+build/
+colorpattern.egg-info/
+
+.env/
+env/
+env
