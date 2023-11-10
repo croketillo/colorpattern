@@ -84,9 +84,10 @@ def read(file_name=None, is_encoding=True, ignore_raises=False):
 
 setup(
     name='colorpattern',
-    version='1.1',
+    version='1.2',
     author='croketillo',
     author_email='croketillo@gmail.com',
+    License="GNU-GPL 3",
     packages=find_packages(),
     install_requires=[
         'colorama',

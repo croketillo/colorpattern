@@ -4,3 +4,4 @@ colorpattern.egg-info/
 .env/
 env/
 env
+docstring.*
