@@ -37,50 +37,48 @@ print("123 error 456 pattern")
 ## Colors (colorama):
 
 ### Text Colors (Fore):
-Fore.BLACK
-Fore.RED
-Fore.GREEN
-Fore.YELLOW
-Fore.BLUE
-Fore.MAGENTA
-Fore.CYAN
-Fore.WHITE
-Fore.LIGHTBLACK_EX
-Fore.LIGHTRED_EX
-Fore.LIGHTGREEN_EX
-Fore.LIGHTYELLOW_EX
-Fore.LIGHTBLUE_EX
-Fore.LIGHTMAGENTA_EX
-Fore.LIGHTCYAN_EX
-Fore.LIGHTWHITE_EX
-Fore.RESET
+- Fore.BLACK
+- Fore.RED
+- Fore.GREEN
+- Fore.YELLOW
+- Fore.BLUE
+- Fore.MAGENTA
+- Fore.CYAN
+- Fore.WHITE
+- Fore.LIGHTBLACK_EX
+- Fore.LIGHTRED_EX
+- Fore.LIGHTGREEN_EX
+- Fore.LIGHTYELLOW_EX
+- Fore.LIGHTBLUE_EX
+- Fore.LIGHTMAGENTA_EX
+- Fore.LIGHTCYAN_EX
+- Fore.LIGHTWHITE_EX
+- Fore.RESET
 
 ### Background Colors (Back):
-Back.BLACK
-Back.RED
-Back.GREEN
-Back.YELLOW
-Back.BLUE
-Back.MAGENTA
-Back.CYAN
-Back.WHITE
-Back.LIGHTBLACK_EX
-Back.LIGHTRED_EX
-Back.LIGHTGREEN_EX
-Back.LIGHTYELLOW_EX
-Back.LIGHTBLUE_EX
-Back.LIGHTMAGENTA_EX
-Back.LIGHTCYAN_EX
-Back.LIGHTWHITE_EX
-Back.RESET
+- Back.BLACK
+- Back.RED
+- Back.GREEN
+- Back.YELLOW
+- Back.BLUE
+- Back.MAGENTA
+- Back.CYAN
+- Back.WHITE
+- Back.LIGHTBLACK_EX
+- Back.LIGHTRED_EX
+- Back.LIGHTGREEN_EX
+- Back.LIGHTYELLOW_EX
+- Back.LIGHTBLUE_EX
+- Back.LIGHTMAGENTA_EX
+- Back.LIGHTCYAN_EX
+- Back.LIGHTWHITE_EX
+- Back.RESET
 
 ### Text Styles (Style):
-Style.NORMAL
-Style.BRIGHT or Style.DIM
-Style.RESET_ALL
-Style.BRIGHT (Bright style)
-Style.DIM (Dim style)
-Style.NORMAL (Reset brightness and opacity)
+- Style.RESET_ALL
+- Style.BRIGHT 
+- Style.DIM 
+- Style.NORMAL 
 
 ## License
 
