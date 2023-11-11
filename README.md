@@ -11,7 +11,7 @@ You can install ColorPattern using pip:
 
 ## Usage
 
-Use start_color(<patterns>) for initialize the color print, and end_color() for stop colorization.
+Use ```start_color(<patterns>)``` for initialize the color print, and ```end_color()``` for stop colorization.
 
 ```python
 from colorpattern.colorpattern import *
