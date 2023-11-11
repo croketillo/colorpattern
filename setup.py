@@ -87,7 +87,7 @@ setup(
     version='1.3',
     author='croketillo',
     author_email='croketillo@gmail.com',
-    License="GNU-GPL 3",
+    license=read("LICENSE", is_encoding=False, ignore_raises=True),
     packages=find_packages(),
     install_requires=[
         'colorama',
