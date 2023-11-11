@@ -6,6 +6,8 @@ the console by applying color to specific patterns. It offers a flexible
 way to define patterns and apply different text colors, background
 colors, styles, and underlines to matching text in the output.
 
+In Version 1.4 can strikethrough
+
 Installation
 ------------
 
@@ -16,8 +18,8 @@ You can install ColorPattern using pip:
 Usage
 -----
 
-Use start_color() for initialize the color print, and end_color() for
-stop colorization.
+Use ``start_color(<patterns>)`` for initialize the color print, and
+``end_color()`` for stop colorization.
 
 .. code:: python
 
@@ -27,17 +29,19 @@ stop colorization.
        # Define your color patterns
        pattern1 = SetPattern(r'\d+', color=Fore.GREEN)
        pattern2 = SetPattern(r'Colorpattern', color=Fore.LIGHTRED_EX, underline=True)
-       pattern3 = SetPattern(r'Croketillo', color=Fore.RED, back=Back.LIGHTYELLOW_EX, style=Style.BRIGHT)
-       email = SetPattern(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.LIGHTCYAN_EX)
+       pattern3 = SetPattern(r'Croketillo', color=Fore.BLACK, back=Back.LIGHTWHITE_EX, style=Style.BRIGHT)
+       email = SetPattern(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.BLUE)
+       strike= SetPattern(r'NEW!!!', strikethrough=True)
 
        # Initialize colorization and get the original print function and applied patterns
        print("\nSTART COLORIZED PRINT")
        print('-----------------------')
-       start_color([pattern1, pattern2, pattern3, email])
+       start_color([pattern1, pattern2, pattern3, email, strike])
 
        # Use the custom print function with colorization
-       print('Colorpattern v1.3')
+       print('Colorpattern v1.4')
        print('By Croketillo - croketillo@gmail.com')
+       print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
 
        # End colorization and restore the original print function
        end_color()
@@ -45,7 +49,7 @@ stop colorization.
        # Now, printing returns to normal
 
        print('-----------------------')
-       print('Colorpattern v1.3')
+       print('Colorpattern v1.4')
        print('By Croketillo - croketillo@gmail.com')
 
        # You can re-enable colorization with new patterns if necessary
