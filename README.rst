@@ -6,7 +6,7 @@ the console by applying color to specific patterns. It offers a flexible
 way to define patterns and apply different text colors, background
 colors, styles, and underlines to matching text in the output.
 
-In Version 1.4 can strikethrough
+In Version 1.4.1 can strikethrough, blink text and italic text
 
 Installation
 ------------
@@ -32,16 +32,19 @@ Use ``start_color(<patterns>)`` for initialize the color print, and
        pattern3 = SetPattern(r'Croketillo', color=Fore.BLACK, back=Back.LIGHTWHITE_EX, style=Style.BRIGHT)
        email = SetPattern(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.BLUE)
        strike= SetPattern(r'NEW!!!', strikethrough=True)
-
+       blink=SetPattern(r'BLINK', blink=True)
+       italic=SetPattern(r'ITALIC TEXT', italic=True)
+       
        # Initialize colorization and get the original print function and applied patterns
        print("\nSTART COLORIZED PRINT")
        print('-----------------------')
-       start_color([pattern1, pattern2, pattern3, email, strike])
+       start_color([pattern1, pattern2, pattern3, email, strike, italic,blink])
 
        # Use the custom print function with colorization
-       print('Colorpattern v1.4')
+       print('Colorpattern v1.4.1')
        print('By Croketillo - croketillo@gmail.com')
        print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
+       print('This is a BLINK and ITALIC TEXT test')
 
        # End colorization and restore the original print function
        end_color()
@@ -49,8 +52,10 @@ Use ``start_color(<patterns>)`` for initialize the color print, and
        # Now, printing returns to normal
 
        print('-----------------------')
-       print('Colorpattern v1.4')
+       print('Colorpattern v1.4.1')
        print('By Croketillo - croketillo@gmail.com')
+       print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
+       print('This is a BLINK and ITALIC TEXT test')
 
        # You can re-enable colorization with new patterns if necessary
        new_pattern = SetPattern(r'new pattern', color=Fore.LIGHTCYAN_EX)
@@ -67,7 +72,7 @@ Use ``start_color(<patterns>)`` for initialize the color print, and
        print("\nNORMAL PRINT AGAIN")
        # Now, printing returns to normal even with the new patterns
        print('-----------------------')
-       print('This is a normal message again.')
+       print('This is a normal message again. 12345')
 
    if __name__ == "__main__":
        main()
@@ -80,6 +85,9 @@ Patterns
 -  ``back``: Background color (e.g., ‘black’, ‘blue’, ‘white’).
 -  ``style``: Text style (e.g., ‘bright’, ‘dim’, ‘reset_all’).
 -  ``underline``: Set to ``True`` for underlining matched text.
+-  ``strike``: Set to ``True`` for strikethrough matched text.
+-  ``blink``: Set to ``True`` for blink matched text.
+-  ``italic``: Set to ``True`` for italic matched text.
 
 Colors (colorama):
 ------------------
