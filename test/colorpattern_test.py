@@ -1,12 +1,46 @@
 from colorpattern.colorpattern import *
 
+def main():
+    # Define your color patterns
+    pattern1 = SetPattern(r'\d+', color=Fore.GREEN)
+    pattern2 = SetPattern(r'Colorpattern', color=Fore.LIGHTRED_EX, underline=True)
+    pattern3 = SetPattern(r'Croketillo', color=Fore.RED, back=Back.LIGHTYELLOW_EX, style=Style.BRIGHT)
+    email = SetPattern(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.LIGHTCYAN_EX)
 
-pattern1 = SetPattern(r'\d+',color=Fore.GREEN)
-pattern2 = SetPattern(r'Colorpattern',color=Fore.LIGHTRED_EX, underline=True)
-pattern3 = SetPattern(r'Croketillo',color=Fore.RED,back=Back.LIGHTYELLOW_EX, style=Style.BRIGHT)
-email = SetPattern(r'\b[A-Za-z0.9._%+-]+@[A-Za-z0.9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.LIGHTCYAN_EX)
+    # Initialize colorization and get the original print function and applied patterns
+    print("\nSTART COLORIZED PRINT")
+    print('-----------------------')
+    start_color([pattern1, pattern2, pattern3, email])
 
-start_color([pattern1,pattern2,pattern3, email])
+    # Use the custom print function with colorization
+    print('Colorpattern v1.3')
+    print('By Croketillo - croketillo@gmail.com')
 
-print('2133 Colorpattern 432423')
-print('By Croketillo - croketillo@gmail.com')
+    # End colorization and restore the original print function
+    end_color()
+    print("\nNORMAL PRINT")
+    # Now, printing returns to normal
+
+    print('-----------------------')
+    print('Colorpattern v1.3')
+    print('By Croketillo - croketillo@gmail.com')
+
+    # You can re-enable colorization with new patterns if necessary
+    new_pattern = SetPattern(r'new pattern', color=Fore.LIGHTCYAN_EX)
+
+    # Use the custom print function with new patterns
+    print("\nSTART COLORIZED PRINT AGAIN")
+    start_color([pattern1, new_pattern])
+
+    print('-----------------------')
+    print('This is a new pattern. 123456')
+
+    # End colorization and restore the original print function
+    end_color()
+    print("\nNORMAL PRINT AGAIN")
+    # Now, printing returns to normal even with the new patterns
+    print('-----------------------')
+    print('This is a normal message again.')
+
+if __name__ == "__main__":
+    main()

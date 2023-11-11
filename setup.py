@@ -84,7 +84,7 @@ def read(file_name=None, is_encoding=True, ignore_raises=False):
 
 setup(
     name='colorpattern',
-    version='1.2',
+    version='1.3',
     author='croketillo',
     author_email='croketillo@gmail.com',
     License="GNU-GPL 3",
@@ -92,7 +92,7 @@ setup(
     install_requires=[
         'colorama',
     ],
-    description='Effortless console text colorization based on user-defined patterns in Python."',
+    description='Effortless console text colorization based on user-defined patterns in Python.',
     long_description=read("README.rst"),
     url='https://github.com/croketillo/colorpattern',
     classifiers=[
