@@ -5,3 +5,4 @@ colorpattern.egg-info/
 env/
 env
 docstring.*
+*/__pycache__/

@@ -6,7 +6,11 @@ the console by applying color to specific patterns. It offers a flexible
 way to define patterns and apply different text colors, background
 colors, styles, and underlines to matching text in the output.
 
-In Version 1.4.1 can strikethrough, blink text and italic text
+Use regular expressions to define the pattern to color. With the color 
+pattern initialized, any console output that matches the pattern will 
+have the defined styles applied to it.
+
+Since Version 1.4.1 can strikethrough, blink text and italic text
 
 Installation
 ------------
@@ -18,8 +22,12 @@ You can install ColorPattern using pip:
 Usage
 -----
 
+Set the patterns whith ``SetPatterns(<pattern>, <options>)`` 
+
 Use ``start_color(<patterns>)`` for initialize the color print, and
 ``end_color()`` for stop colorization.
+
+EXAMPLE:
 
 .. code:: python
 
@@ -41,7 +49,7 @@ Use ``start_color(<patterns>)`` for initialize the color print, and
        start_color([pattern1, pattern2, pattern3, email, strike, italic,blink])
 
        # Use the custom print function with colorization
-       print('Colorpattern v1.4.1')
+       print('Colorpattern v1.4.2')
        print('By Croketillo - croketillo@gmail.com')
        print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
        print('This is a BLINK and ITALIC TEXT test')
@@ -52,7 +60,7 @@ Use ``start_color(<patterns>)`` for initialize the color print, and
        # Now, printing returns to normal
 
        print('-----------------------')
-       print('Colorpattern v1.4.1')
+       print('Colorpattern v1.4.2')
        print('By Croketillo - croketillo@gmail.com')
        print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
        print('This is a BLINK and ITALIC TEXT test')
