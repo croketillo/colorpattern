@@ -1,5 +1,7 @@
 # ColorPattern
 
+[![PyPI](https://img.shields.io/pypi/v/colorpattern)][![Total Downloads](https://static.pepy.tech/badge/colorpattern)]
+
 ColorPattern is a Python module designed for enhancing text output in the console by applying color to specific patterns. It offers a flexible way to define patterns and apply different text colors, background colors, styles, underlines and other options to predefined patterns.
 
 Use regular expressions to define the pattern to color. With the color pattern initialized, any console output that matches the pattern will have the defined styles applied to it.

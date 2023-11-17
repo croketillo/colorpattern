@@ -1,13 +1,15 @@
 ColorPattern
 ============
 
+[|PyPI|][|Total Downloads|]
+
 ColorPattern is a Python module designed for enhancing text output in
 the console by applying color to specific patterns. It offers a flexible
 way to define patterns and apply different text colors, background
-colors, styles, and underlines to matching text in the output.
+colors, styles, underlines and other options to predefined patterns.
 
-Use regular expressions to define the pattern to color. With the color 
-pattern initialized, any console output that matches the pattern will 
+Use regular expressions to define the pattern to color. With the color
+pattern initialized, any console output that matches the pattern will
 have the defined styles applied to it.
 
 Since Version 1.4.1 can strikethrough, blink text and italic text
@@ -22,12 +24,13 @@ You can install ColorPattern using pip:
 Usage
 -----
 
-Set the patterns whith ``SetPatterns(<pattern>, <options>)`` 
+Set the patterns whith SetPatterns(, )
 
 Use ``start_color(<patterns>)`` for initialize the color print, and
 ``end_color()`` for stop colorization.
 
-EXAMPLE:
+Example
+~~~~~~~
 
 .. code:: python
 
@@ -42,7 +45,7 @@ EXAMPLE:
        strike= SetPattern(r'NEW!!!', strikethrough=True)
        blink=SetPattern(r'BLINK', blink=True)
        italic=SetPattern(r'ITALIC TEXT', italic=True)
-       
+
        # Initialize colorization and get the original print function and applied patterns
        print("\nSTART COLORIZED PRINT")
        print('-----------------------')
@@ -155,3 +158,6 @@ License
 
 This project is licensed under the GNU-GLP,3 License - see the LICENSE
 file for details.
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/colorpattern
+.. |Total Downloads| image:: https://static.pepy.tech/badge/colorpattern
