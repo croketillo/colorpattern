@@ -1,7 +1,7 @@
 ColorPattern
 ============
 
-[|PyPI|][|Total Downloads|]
+|PyPI| |Total Downloads|
 
 ColorPattern is a Python module designed for enhancing text output in
 the console by applying color to specific patterns. It offers a flexible
