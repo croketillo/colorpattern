@@ -84,7 +84,7 @@ def read(file_name=None, is_encoding=True, ignore_raises=False):
 
 setup(
     name='colorpattern',
-    version='1.4.2',
+    version='1.4.3',
     author='croketillo',
     author_email='croketillo@gmail.com',
     license=read("LICENSE", is_encoding=False, ignore_raises=True),
@@ -96,21 +96,21 @@ setup(
     long_description=read("README.rst"),
     url='https://github.com/croketillo/colorpattern',
     classifiers=[
-        'Environment :: Console',  # Proyecto diseñado para ejecutarse en la consola
-        'Intended Audience :: Developers',  # Audiencia a la que se dirige el proyecto
-        'Programming Language :: Python :: 3',  # Indica que el proyecto es compatible con Python 3
+        'Environment :: Console', 
+        'Intended Audience :: Developers', 
+        'Programming Language :: Python :: 3',  
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'Topic :: Terminals',  # Relacionado con la manipulación de terminales y consolas
-        'Topic :: Software Development :: Libraries :: Python Modules',  # Relacionado con desarrollo de software
-        'Topic :: Utilities',  # Utilidades generales
+        'Topic :: Terminals',  
+        'Topic :: Software Development :: Libraries :: Python Modules', 
+        'Topic :: Utilities',  
         'Topic :: Terminals'
     ],
-    keywords='color pattern console',
+    keywords='color pattern console colorpattern',
     entry_points={
         'console_scripts': [
-            'colorpattern = colorpattern.colorpattern:main',
+            'colorpattern = colorpattern:main',
         ],
     },
 )

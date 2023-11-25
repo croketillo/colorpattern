@@ -1,7 +1,9 @@
 ColorPattern
 ============
 
-|PyPI| |Total Downloads|
+.. image:: https://img.shields.io/pypi/dm/colorpattern:alt: PyPI - Downloads
+
+
 
 ColorPattern is a Python module designed for enhancing text output in
 the console by applying color to specific patterns. It offers a flexible
