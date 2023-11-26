@@ -1,5 +1,5 @@
 """ 
-This file is (or part of) COLORPATTERN v1.4.1
+This file is (or part of) COLORPATTERN v1.4.5
 Copyright 2023- Croketillo <croketillo@gmail.com> https://github.com/croketillo
  
 DESCIPTION:

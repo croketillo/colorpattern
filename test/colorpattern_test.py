@@ -16,7 +16,7 @@ def main():
     start_color([pattern1, pattern2, pattern3, email, strike, italic,blink])
 
     # Use the custom print function with colorization
-    print('Colorpattern v1.4.1')
+    print('Colorpattern v1.4.5')
     print('By Croketillo - croketillo@gmail.com')
     print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
     print('This is a BLINK and ITALIC TEXT test')
@@ -27,7 +27,7 @@ def main():
     # Now, printing returns to normal
 
     print('-----------------------')
-    print('Colorpattern v1.4.1')
+    print('Colorpattern v1.4.5')
     print('By Croketillo - croketillo@gmail.com')
     print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
     print('This is a BLINK and ITALIC TEXT test')
