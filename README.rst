@@ -4,7 +4,8 @@ ColorPattern
 .. image:: https://img.shields.io/pypi/dm/colorpattern
    :alt: PyPI - Downloads
 
-
+.. image:: https://img.shields.io/pepy/dt/colorpattern
+   :alt: Pepy Total Downlods
 
 
 ColorPattern is a Python module designed for enhancing text output in
@@ -28,7 +29,7 @@ You can install ColorPattern using pip:
 Usage
 -----
 
-Set the patterns whith SetPatterns(, )
+Set the patterns whith ``SetPatterns(<patterns>,<options>)``
 
 Use ``start_color(<patterns>)`` for initialize the color print, and
 ``end_color()`` for stop colorization.
@@ -56,7 +57,7 @@ Example
        start_color([pattern1, pattern2, pattern3, email, strike, italic,blink])
 
        # Use the custom print function with colorization
-       print('Colorpattern v1.4.5')
+       print('Colorpattern v1.4.6')
        print('By Croketillo - croketillo@gmail.com')
        print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
        print('This is a BLINK and ITALIC TEXT test')
@@ -161,6 +162,3 @@ License
 
 This project is licensed under the GNU-GLP,3 License - see the LICENSE
 file for details.
-
-.. |PyPI| image:: https://img.shields.io/pypi/v/colorpattern
-.. |Total Downloads| image:: https://static.pepy.tech/badge/colorpattern

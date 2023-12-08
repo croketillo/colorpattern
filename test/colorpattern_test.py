@@ -5,7 +5,7 @@ def main():
     pattern1 = SetPattern(r'\d+', color=Fore.GREEN)
     pattern2 = SetPattern(r'Colorpattern', color=Fore.LIGHTRED_EX, underline=True)
     pattern3 = SetPattern(r'Croketillo', color=Fore.BLACK, back=Back.LIGHTWHITE_EX, style=Style.BRIGHT)
-    email = SetPattern(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.BLUE)
+    pattern_email = SetPattern(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,7}\b', color=Fore.BLUE)
     strike= SetPattern(r'NEW!!!', strikethrough=True)
     blink=SetPattern(r'BLINK', blink=True)
     italic=SetPattern(r'ITALIC TEXT', italic=True)
@@ -13,10 +13,10 @@ def main():
     # Initialize colorization and get the original print function and applied patterns
     print("\nSTART COLORIZED PRINT")
     print('-----------------------')
-    start_color([pattern1, pattern2, pattern3, email, strike, italic,blink])
+    start_color([pattern1, pattern2, pattern3, pattern_email, strike, italic,blink])
 
     # Use the custom print function with colorization
-    print('Colorpattern v1.4.5')
+    print('Colorpattern v1.4.6')
     print('By Croketillo - croketillo@gmail.com')
     print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
     print('This is a BLINK and ITALIC TEXT test')

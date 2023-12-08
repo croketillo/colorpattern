@@ -1,7 +1,8 @@
 # ColorPattern
 
 ![PyPI](https://img.shields.io/pypi/v/colorpattern) ![PyPI - Downloads](https://img.shields.io/pypi/dm/colorpattern??color=%2360EE59)
- ![Total Downloads](https://static.pepy.tech/badge/colorpattern)
+![Pepy Total Downlods](https://img.shields.io/pepy/dt/colorpattern)
+
 
 ColorPattern is a Python module designed for enhancing text output in the console by applying color to specific patterns. It offers a flexible way to define patterns and apply different text colors, background colors, styles, underlines and other options to predefined patterns.
 
@@ -43,7 +44,7 @@ def main():
     start_color([pattern1, pattern2, pattern3, email, strike, italic,blink])
 
     # Use the custom print function with colorization
-    print('Colorpattern v1.4.5')
+    print('Colorpattern v1.4.6')
     print('By Croketillo - croketillo@gmail.com')
     print('NEW!!! - NOW YOU CAN INCLUDE STRIKETHROUGH IN PATTERNS')
     print('This is a BLINK and ITALIC TEXT test')
@@ -86,9 +87,9 @@ if __name__ == "__main__":
 - `back`: Background color (e.g., 'black', 'blue', 'white').
 - `style`: Text style (e.g., 'bright', 'dim', 'reset_all').
 - `underline`: Set to `True` for underlining matched text.
--  `strike`: Set to `True` for strikethrough matched text.
--  `blink`: Set to `True` for blink matched text.
--  `italic`: Set to `True` for italic matched text.
+- `strike`: Set to `True` for strikethrough matched text.
+- `blink`: Set to `True` for blink matched text.
+- `italic`: Set to `True` for italic matched text.
 
 
 ## Colors (colorama):
