@@ -1,4 +1,4 @@
-from colorpattern.colorpattern import *
+from colorpattern import *
 
 def main():
     # Define your color patterns
