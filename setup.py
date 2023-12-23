@@ -84,7 +84,7 @@ def read(file_name=None, is_encoding=True, ignore_raises=False):
 
 setup(
     name='colorpattern',
-    version='1.4.6',
+    version='1.4.7',
     author='croketillo',
     author_email='croketillo@gmail.com',
     license=read("LICENSE", is_encoding=False, ignore_raises=True),

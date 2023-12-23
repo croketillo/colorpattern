@@ -1,1 +1,1 @@
-
+from colorpattern.colorpattern import *

@@ -26,7 +26,7 @@ Use ```start_color(<patterns>)``` for initialize the color print, and ```end_col
 ### Example
 
 ```python
-from colorpattern.colorpattern import *
+from colorpattern import *
 
 def main():
     # Define your color patterns
